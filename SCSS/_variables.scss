@@ -86,4 +86,12 @@ $font-family: 'Rubik', sans-serif;
     letter-spacing: 0;
 }
 
+@mixin button {
+    @include text-preset-5-regular;
+    color: $white;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
 
