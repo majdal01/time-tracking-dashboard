@@ -1,0 +1,89 @@
+/* Spacing */
+$spacing-500: 2.5rem; //40px
+$spacing-400: 2rem; //32px
+$spacing-300: 1.5rem; //24px
+$spacing-200: 1rem; //16px
+$spacing-100: 0.5rem; //8px
+$spacing-0: 0rem; //0px
+
+/* Colors */
+$white: hsl(0, 100%, 100%);
+$black: hsl(0, 0%, 0%);
+
+$navy-950: hsl(226, 43%, 10%);
+$navy-900: hsl(235, 46%, 20%);
+$navy-800: hsl(235, 41%, 34%);
+$navy-200: hsl(236, 100%, 87%);
+
+$orange-300: hsl(15, 100%, 70%);
+
+$purple-700: hsl(264, 64%, 52%);
+$purple-600: hsl(246, 80%, 60%);
+$purple-500: hsl(235, 45%, 61%);
+
+$blue-300: hsl(195, 74%, 62%);
+$pink-400: hsl(348, 100%, 68%);
+$green-400: hsl(145, 58%, 55%);
+$yellow-300: hsl(43, 84%, 65%);
+$grey-200: hsl(0, 0%, 85%);
+
+/* Typography */
+$font-family: 'Rubik', sans-serif;
+
+@mixin text-preset-1 {
+    font-family: $font-family;
+    font-size: 3.5rem; /* 56px */
+    font-weight: 300;
+    line-height: 4.125rem;
+    letter-spacing: 0rem;
+}
+
+@mixin text-preset-2 {
+    font-family: $font-family;
+    font-size: 2.5rem; /* 40px */
+    font-weight: 300;
+    line-height: 2.9375rem;
+    letter-spacing: 0rem;
+}
+
+@mixin text-preset-3 {
+    font-family:  $font-family;
+    font-size: 2rem; 
+    font-weight: 300;
+    line-height: 2.375rem;
+    letter-spacing: 0rem;
+}
+
+@mixin text-preset-4 {
+    font-family:  $font-family;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+}
+
+@mixin text-preset-5-medium {
+    font-family: $font-family;
+    font-size: 1.125rem; 
+    font-weight: 500;
+    line-height: 1.3125rem;
+    letter-spacing: 0;
+}
+
+@mixin text-preset-5-regular {
+    font-family: $font-family;
+    font-size: 1.125rem; 
+    font-weight: 400;
+    line-height: 1.3125rem;
+    letter-spacing: 0;
+}
+
+@mixin text-preset-6 {
+    font-family: $font-family;
+    font-size: 0.9375rem; 
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0;
+}
+
+
