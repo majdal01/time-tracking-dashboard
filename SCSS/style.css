@@ -1,0 +1,173 @@
+/* Spacing */
+/* Colors */
+/* Typography */
+/* Background Images for Cards */
+#work {
+  background-image: url(../images/icon-work.svg);
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 0.9375rem;
+}
+
+#play {
+  background-image: url(../images/icon-play.svg);
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 0.9375rem;
+}
+
+#study {
+  background-image: url(../images/icon-study.svg);
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 0.9375rem;
+}
+
+#exercise {
+  background-image: url(../images/icon-exercise.svg);
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 0.9375rem;
+}
+
+#social {
+  background-image: url(../images/icon-social.svg);
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 0.9375rem;
+}
+
+#self-care {
+  background-image: url(../images/icon-self-care.svg);
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 0.9375rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+}
+
+#main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 15.75rem 10.125rem;
+  color: hsl(0, 100%, 100%);
+}
+
+button {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  letter-spacing: 0;
+  color: hsl(0, 100%, 100%);
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0;
+  padding-top: 2.5rem;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem; /* 40px */
+  font-weight: 300;
+  line-height: 2.9375rem;
+  letter-spacing: 0rem;
+}
+
+h3, .dots {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3.5rem; /* 56px */
+  font-weight: 300;
+  line-height: 4.125rem;
+  letter-spacing: 0rem;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0;
+  color: hsl(236, 100%, 87%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: auto;
+}
+.grid-container .profile-card {
+  grid-area: 1/1/3/2;
+  width: 16.8rem;
+  height: auto;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.9375rem;
+}
+.grid-container .profile-card .profile-information {
+  background-color: hsl(246, 80%, 60%);
+  padding: 2rem;
+  border-radius: 0.9375rem;
+  height: 22.125rem;
+  width: 100%;
+}
+.grid-container .profile-card .profile-information img {
+  max-width: 5rem;
+  height: auto;
+}
+.grid-container .profile-card .timeframe-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+.grid-container .card-background {
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: auto;
+  height: auto;
+}
+.grid-container .card-container {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.9375rem;
+  padding: 2rem;
+  color: hsl(0, 100%, 100%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.81rem;
+  width: 15.9375rem;
+  max-width: 100%;
+  height: auto;
+}
+.grid-container .card-container .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.grid-container .card-container h3 {
+  margin-bottom: 1.5rem;
+}
+.grid-container .card-container h4 {
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

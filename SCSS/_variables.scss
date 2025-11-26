@@ -94,4 +94,71 @@ $font-family: 'Rubik', sans-serif;
     box-shadow: none;
 }
 
+@mixin card-container {
+    background-color: $navy-900;
+    border-radius: 0.9375rem;
+    padding: $spacing-400;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.81rem;
+    width: 15.9375rem;
+    max-width: 100%;
+    height: auto;
 
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        margin-bottom: $spacing-300;
+    }
+
+    h4 {
+        margin-bottom: $spacing-100;
+    }
+}
+
+/* Background Images for Cards */
+
+@mixin card-background-images {
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#work {
+        background-image: url(../images/icon-work.svg);
+        background-color: $orange-300;
+        border-radius: 0.9375rem;
+    }
+
+#play {
+        background-image: url(../images/icon-play.svg);
+        background-color: $blue-300;
+        border-radius: 0.9375rem;
+    }
+
+#study {
+        background-image: url(../images/icon-study.svg);
+        background-color: $pink-400;
+        border-radius: 0.9375rem;
+    }
+
+#exercise {
+        background-image: url(../images/icon-exercise.svg);
+        background-color: $green-400;
+        border-radius: 0.9375rem;
+    }
+
+#social {
+        background-image: url(../images/icon-social.svg);
+        background-color: $purple-700;
+        border-radius: 0.9375rem;
+    }
+
+#self-care {
+        background-image: url(../images/icon-self-care.svg);
+        background-color: $yellow-300;
+        border-radius: 0.9375rem;
+    }
