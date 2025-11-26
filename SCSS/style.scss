@@ -18,6 +18,7 @@ body {
     gap: $spacing-400;
     padding: 15.75rem 2rem;
     color: $white;
+    height: auto;
 }
 
 button {
@@ -67,10 +68,13 @@ p {
             height: 22.125rem;
             width: 100%;
 
-            img {
+            #profile-img {
                 max-width: 5rem;
+                img {
+                width: 100%;
                 height: auto; 
                 }
+            }
         }
 
         .timeframe-buttons {
@@ -129,4 +133,56 @@ p {
         @include card-container;
     }
 
+}
+
+
+
+//***********Media Queries***********//
+
+@media (max-width: 768px) {
+
+    #main {
+        padding: 3rem 1rem;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: $spacing-300;
+        row-gap: $spacing-300;
+        height: auto;
+
+        .profile-card {
+            grid-area: 1 / 1 / 2 / 4;
+
+            .profile-information {
+                display: flex;
+                height: fit-content;
+                gap: $spacing-300;
+                align-items: center;
+                
+                #profile-name {
+                    h1 {
+                        padding-top: 0;
+                    }
+                    h2 {
+                    @include text-preset-4;
+                    }
+                }
+            }
+
+            .timeframe-buttons {
+                flex-direction: row;
+                padding: $spacing-300;
+                gap: $spacing-500;
+                justify-content: center;
+            }
+        }
+    
+        .card-container {
+            padding: $spacing-300;
+        }
+    }
 }

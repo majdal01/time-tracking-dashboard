@@ -20,6 +20,7 @@ body {
   gap: 2rem;
   padding: 15.75rem 2rem;
   color: hsl(0, 100%, 100%);
+  height: auto;
 }
 
 button {
@@ -96,8 +97,11 @@ p {
   height: 22.125rem;
   width: 100%;
 }
-.grid-container .profile-card .profile-information img {
+.grid-container .profile-card .profile-information #profile-img {
   max-width: 5rem;
+}
+.grid-container .profile-card .profile-information #profile-img img {
+  width: 100%;
   height: auto;
 }
 .grid-container .profile-card .timeframe-buttons {
@@ -163,4 +167,48 @@ p {
 }
 .grid-container .card-container h4 {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #main {
+    padding: 3rem 1rem;
+    align-items: flex-start;
+    height: auto;
+  }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    row-gap: 1.5rem;
+    height: auto;
+  }
+  .grid-container .profile-card {
+    grid-area: 1/1/2/4;
+  }
+  .grid-container .profile-card .profile-information {
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .grid-container .profile-card .profile-information #profile-name h1 {
+    padding-top: 0;
+  }
+  .grid-container .profile-card .profile-information #profile-name h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+  }
+  .grid-container .profile-card .timeframe-buttons {
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+  .grid-container .card-container {
+    padding: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
