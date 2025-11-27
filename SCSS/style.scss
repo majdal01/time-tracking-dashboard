@@ -144,18 +144,18 @@ p {
     #main {
         padding: 3rem 1rem;
         align-items: flex-start;
-        height: auto;
     }
 
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
         gap: $spacing-300;
-        row-gap: $spacing-300;
+        grid-row-gap: $spacing-300;
         height: auto;
 
         .profile-card {
             grid-area: 1 / 1 / 2 / 4;
+            
 
             .profile-information {
                 display: flex;
@@ -183,6 +183,12 @@ p {
     
         .card-container {
             padding: $spacing-300;
+
+            .card-header {
+                h3 {
+                    margin-bottom: $spacing-200;
+                }
+            }
         }
     }
 }

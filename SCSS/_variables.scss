@@ -88,10 +88,14 @@ $font-family: 'Rubik', sans-serif;
 
 @mixin button {
     @include text-preset-5-regular;
-    color: $white;
+    color: $purple-500;
     border: none;
     background: none;
     box-shadow: none;
+
+    &:active {
+        color: $white;
+    }
 }
 
 @mixin card-container {
