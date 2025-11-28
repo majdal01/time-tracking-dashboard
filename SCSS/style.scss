@@ -28,6 +28,7 @@ button {
 h1 {
     @include text-preset-6;
     padding-top: $spacing-500;
+    color: $navy-200;
 }
 
 h2 {
@@ -90,7 +91,6 @@ p {
     .card-background {
         @include card-background-images;
         width: 100%;
-        height: 5rem;
     }
 
     #work {
@@ -152,10 +152,10 @@ p {
         gap: $spacing-300;
         grid-row-gap: $spacing-300;
         height: auto;
+        width: 100%;
 
         .profile-card {
             grid-area: 1 / 1 / 2 / 4;
-            
 
             .profile-information {
                 display: flex;
@@ -189,6 +189,38 @@ p {
                     margin-bottom: $spacing-200;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+
+    h4 {
+        @include text-preset-3;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;    
+
+        .profile-card {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .card-background {
+            height: auto;
+            padding-top: $spacing-500;
+        }
+
+        .card-container h4 {
+            margin-bottom: 0;
+        }
+
+        .data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }

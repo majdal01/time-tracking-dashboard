@@ -105,9 +105,13 @@ $font-family: 'Rubik', sans-serif;
     color: $white;
     display: flex;
     flex-direction: column;
-    margin-top: 2.81rem;
+    margin-top: auto;
     max-width: 100%;
-    height: auto;
+    
+    
+    &:active {
+        background-color: $navy-800;
+    }
 
     .card-header {
         display: flex;
@@ -126,6 +130,10 @@ $font-family: 'Rubik', sans-serif;
 /* Background Images for Cards */
 
 @mixin card-background-images {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: top right;
+
 }
