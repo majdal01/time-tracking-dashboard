@@ -126,32 +126,32 @@ p {
 .grid-container #work {
   background-image: url(../images/icon-work.svg);
   background-color: hsl(15, 100%, 70%);
-  border-radius: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 1.2rem 1.2rem;
 }
 .grid-container #play {
   background-image: url(../images/icon-play.svg);
   background-color: hsl(195, 74%, 62%);
-  border-radius: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 1.2rem 1.2rem;
 }
 .grid-container #study {
   background-image: url(../images/icon-study.svg);
   background-color: hsl(348, 100%, 68%);
-  border-radius: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 1.2rem 1.2rem;
 }
 .grid-container #exercise {
   background-image: url(../images/icon-exercise.svg);
   background-color: hsl(145, 58%, 55%);
-  border-radius: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 1.2rem 1.2rem;
 }
 .grid-container #social {
   background-image: url(../images/icon-social.svg);
   background-color: hsl(264, 64%, 52%);
-  border-radius: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 1.2rem 1.2rem;
 }
 .grid-container #self-care {
   background-image: url(../images/icon-self-care.svg);
   background-color: hsl(43, 84%, 65%);
-  border-radius: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 1.2rem 1.2rem;
 }
 .grid-container .card-container {
   background-color: hsl(235, 46%, 20%);
@@ -223,7 +223,7 @@ p {
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   h4 {
     font-family: "Rubik", sans-serif;
     font-size: 2rem;
