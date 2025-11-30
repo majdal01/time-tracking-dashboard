@@ -166,12 +166,22 @@ p {
   margin-top: auto;
   max-width: 100%;
 }
-.grid-container .card-container:active {
+.grid-container .card-container:hover {
   background-color: hsl(235, 41%, 34%);
 }
 .grid-container .card-container .card-header {
   display: flex;
   justify-content: space-between;
+  color: hsl(0, 100%, 100%);
+}
+.grid-container .card-container .card-header .dots {
+  color: hsl(236, 100%, 87%);
+}
+.grid-container .card-container .card-header:hover {
+  cursor: pointer;
+}
+.grid-container .card-container .card-header:hover .dots {
+  color: hsl(0, 100%, 100%);
 }
 .grid-container .card-container h3 {
   margin-bottom: 1.5rem;

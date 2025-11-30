@@ -109,13 +109,26 @@ $font-family: 'Rubik', sans-serif;
     max-width: 100%;
     
     
-    &:active {
+    &:hover {
         background-color: $navy-800;
     }
 
     .card-header {
         display: flex;
         justify-content: space-between;
+        color: $white;
+
+        .dots {
+            color: $navy-200;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .dots {
+                color: $white;
+            }
+        }
     }
 
     h3 {
