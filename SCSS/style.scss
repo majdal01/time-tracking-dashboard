@@ -36,10 +36,6 @@ h2 {
 }
 
 h3 {
-   @include text-preset-5-medium;
-}
-
-h4 {
     @include text-preset-1;
 }
 
@@ -84,6 +80,7 @@ p {
             gap: 1.3rem;
             padding: $spacing-400;
             align-items: flex-start;
+            @include text-preset-5-medium;
 
             button.active {
                 color: $white;
@@ -135,6 +132,14 @@ p {
 
     .card-container {
         @include card-container;
+
+        .data {
+            margin-top: $spacing-300;
+
+            h3 {
+                margin-bottom: $spacing-100;
+            }
+        }
     }
 
 }
@@ -199,7 +204,7 @@ p {
 
 @media (max-width: 425px) {
 
-    h4 {
+    h3 {
         @include text-preset-3;
     }
 
@@ -217,14 +222,17 @@ p {
             padding-top: $spacing-500;
         }
 
-        .card-container h4 {
-            margin-bottom: 0;
-        }
-
-        .data {
+        .card-container {
+            .data {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+                h3 {
+                    margin-bottom: 0;
+                }
+            }
         }
+        
     }
 }

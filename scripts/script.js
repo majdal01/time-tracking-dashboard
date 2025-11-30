@@ -17,7 +17,7 @@ async function fetchData() {
        function updateUI(period) {
             data.forEach((activity, index) => {
                 const activityCard = document.querySelectorAll('.card-container')[index];
-                const hoursElement = activityCard.querySelector('.data h4');
+                const hoursElement = activityCard.querySelector('.data h3');
                 const periodElement = activityCard.querySelector('.data p');
 
                 hoursElement.textContent = `${activity.timeframes[period].current}hrs`;
