@@ -56,7 +56,7 @@ h2 {
   letter-spacing: 0rem;
 }
 
-h3, .dots {
+h3 {
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
@@ -173,9 +173,16 @@ p {
   display: flex;
   justify-content: space-between;
   color: hsl(0, 100%, 100%);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  letter-spacing: 0;
 }
 .grid-container .card-container .card-header .dots {
   color: hsl(236, 100%, 87%);
+  width: 12%;
+  height: 12%;
 }
 .grid-container .card-container .card-header:hover {
   cursor: pointer;

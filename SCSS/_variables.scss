@@ -117,16 +117,19 @@ $font-family: 'Rubik', sans-serif;
         display: flex;
         justify-content: space-between;
         color: $white;
+        @include text-preset-5-medium;
 
         .dots {
             color: $navy-200;
+            width: 12%;
+            height: 12%;  
         }
 
         &:hover {
             cursor: pointer;
 
             .dots {
-                color: $white;
+                color: $white; 
             }
         }
     }
