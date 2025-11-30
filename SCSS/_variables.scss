@@ -120,16 +120,15 @@ $font-family: 'Rubik', sans-serif;
         @include text-preset-5-medium;
 
         .dots {
-            color: $navy-200;
-            width: 12%;
-            height: 12%;  
+            fill: $navy-200;
+            margin-top: 0.5rem;
         }
 
         &:hover {
             cursor: pointer;
 
             .dots {
-                color: $white; 
+                fill: $white; 
             }
         }
     }

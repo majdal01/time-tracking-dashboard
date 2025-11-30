@@ -180,15 +180,14 @@ p {
   letter-spacing: 0;
 }
 .grid-container .card-container .card-header .dots {
-  color: hsl(236, 100%, 87%);
-  width: 12%;
-  height: 12%;
+  fill: hsl(236, 100%, 87%);
+  margin-top: 0.5rem;
 }
 .grid-container .card-container .card-header:hover {
   cursor: pointer;
 }
 .grid-container .card-container .card-header:hover .dots {
-  color: hsl(0, 100%, 100%);
+  fill: hsl(0, 100%, 100%);
 }
 .grid-container .card-container h3 {
   margin-bottom: 1.5rem;
